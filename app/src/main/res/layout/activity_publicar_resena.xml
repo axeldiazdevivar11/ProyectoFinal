@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Imagen de la canción -->
+    <ImageView
+        android:id="@+id/image_view_cancion"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:contentDescription="Imagen de la canción"/>
+
+    <!-- Título de la canción -->
+    <TextView
+        android:id="@+id/text_view_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Título de la Canción"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"/>
+
+    <!-- RatingBar para calificar la canción -->
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="0"
+        android:layout_marginTop="16dp"/>
+
+    <!-- EditText para escribir la reseña -->
+    <EditText
+        android:id="@+id/edit_text_resena"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Escribe tu reseña aquí"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edittext"/>
+
+    <!-- Botón para guardar la reseña -->
+    <Button
+        android:id="@+id/button_guardar_resena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar Reseña"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
