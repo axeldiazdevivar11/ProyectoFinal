@@ -7,60 +7,76 @@
     android:gravity="center_horizontal"
     android:padding="16dp">
 
+    <!-- Logo de la aplicación -->
     <ImageView
         android:src="@drawable/logo_musica"
         android:layout_width="100dp"
-        android:layout_height="100dp"/>
+        android:layout_height="100dp" />
 
+    <!-- Título -->
     <TextView
         android:textStyle="bold"
-        android:textSize="24sp"
-        android:layout_margin="4dp"
+        android:textSize="30sp"
+        android:layout_margin="7dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mi Aplicación de Música" />
 
+    <!-- Campo para buscar canciones -->
     <EditText
         android:id="@+id/edit_text_buscar"
         android:inputType="text"
         android:layout_margin="4dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Buscar canción"/>
+        android:hint="Buscar canción" />
 
+    <!-- Botón para realizar búsqueda -->
     <Button
         android:id="@+id/button_buscar"
         android:layout_margin="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Buscar"/>
+        android:text="Buscar" />
 
+    <!-- Área para mostrar los resultados de la búsqueda -->
     <TextView
         android:id="@+id/text_view_resultado"
-        android:layout_margin="8dp"
+        android:textSize="15sp"
+        android:layout_margin="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Resultados"/>
+        android:text="Resultados" />
 
+    <!-- Barra de calificación -->
     <RatingBar
         android:id="@+id/rating_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:numStars="5"
-        android:stepSize="1.0"/>
+        android:stepSize="1.0" />
 
+    <!-- Campo para escribir reseña -->
     <EditText
         android:id="@+id/edit_text_resena"
         android:layout_margin="4dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Escribe tu reseña"/>
+        android:hint="Escribe tu reseña" />
 
+    <!-- Botón para guardar reseña -->
     <Button
         android:id="@+id/button_guardar"
         android:layout_margin="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Guardar Reseña"/>
+        android:text="Guardar Reseña" />
+
+    <Button
+        android:id="@+id/button_mis_resenas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mis Reseñas"
+        android:layout_marginTop="16dp" />
 
 </LinearLayout>
